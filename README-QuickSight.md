@@ -32,13 +32,13 @@ EU-WEST-1 | ```s3://aws-vpa-tweets-euw1/```
 Amazon Kinesis Firehose delivers the data into S3 as a GZIP file format.
 You can use a variety of methods to download one of the files in the dataset. If you use the AWS CLI today, this is likely the easiest method to take a look at the data.
 
-List one of the files with (Note use **s3://aws-vpa-tweets-euw1...** for Ireland):
+List one of the files with (Note use **s3://aws-vpa-tweets-euw1...** for EU-WEST-1 [Ireland]):
 ```bash
-aws s3 ls s3://aws-vpa-tweets/tweets/2017/11/06/04/aws-vpa-tweets-1-2017-11-06-04-23-28-2020b61e-ac18-4c9e-b446-6a49f8cced21.gz
+aws ls cp s3://aws-vpa-tweets/tweets/2018/04/30/10/aws-vpa-tweets-3-2018-04-30-10-25-03-57315e18-b247-41ca-9a61-19fd5b0ea3fb.gz
 ```
-Download this file to your local directory (Note use **s3://aws-vpa-tweets-euw1...** for Ireland):
+Download this file to your local directory (Note use **s3://aws-vpa-tweets-euw1...** for EU-WEST-1 [Ireland]):
 ```bash
-aws s3 cp s3://aws-vpa-tweets/tweets/2017/11/06/04/aws-vpa-tweets-1-2017-11-06-04-23-28-2020b61e-ac18-4c9e-b446-6a49f8cced21.gz .
+aws s3 cp s3://aws-vpa-tweets/tweets/2018/04/30/10/aws-vpa-tweets-3-2018-04-30-10-25-03-57315e18-b247-41ca-9a61-19fd5b0ea3fb.gz .
 ```
 
 Since the files are compressed, you will need to unzip it. In addition the data is stored in raw text form. Make sure you rename the file to either *.json or *.text.
