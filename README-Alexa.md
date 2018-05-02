@@ -166,9 +166,9 @@ You've now created a Voice User Interface and a Lambda function, and connecte
 <summary><strong>Full Solution - Testing Your Alexa Skill</strong></summary> 
  
 1.  In the **[Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list)**, select your skill from the list. You may still have a browser tab open if you started at the beginning of this tutorial. 
-2. Open the **"Test"** tab on the left side. 
+2. Open the **"Test"** tab on the top menu bar. 
 
-![](./media/images/Alexa_Lab_15.png) 
+![](./media/images/Alexa_Lab_02.png) 
  
 3. Test your skill with the **Service Simulator**. To validate that your skill is working as expected, use the Service Simulator. In the **Enter Utterance** text box, type "What’s my reinvent twitter sentiment" 
   ![](./media/images/Alexa_Lab_16.gif) 
