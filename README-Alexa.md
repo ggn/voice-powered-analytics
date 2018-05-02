@@ -25,12 +25,29 @@ Alexa fits into your Voice Powered Analytics architecture as the interaction int
   3. In the top-right corner of the screen, click the **"Sign In"** button. 
   (If you don't already have an account, you will be able to create a new one for free.) 
   4. Once you have signed in, on the Alexa page, click the **"Alexa Skills Kit"** button, which is what we'll use to create our custom skill. 
-  ![](./media/images/Alexa_Lab_2.png) 
+  ![](./media/images/Alexa_Lab_01.png) 
   5.  Select **"Add a new skill."** This will get you to the first page of your new Alexa skill.  
   
-  **Note: These lab instructions reflect the old Alexa Skills console.  If given the option, in the top right-hand corner of the screen, click "Your Alexa Console", then "Skills". This will bring you back to the traditional console experience**     
+  **Note: These lab instructions (gifs) reflect the old Alexa Skills console and are only for reference. New console screeshots are incorporated in tha lab. Please follow them. **     
   
   6.  Fill out the **Skill Information screen**.  You can accept any defaults. Make sure to review the tips we provide below the screenshot. 
+  
+   6.1 **Skill Name and Language**
+  ![](./media/images/Alexa_ggnLab_SkillName&Lang.png) 
+  
+  Note: Language selected must be same as that of Alexa Device
+  
+   6.2 **Select Skill Model**
+   Select Custom Skill, we are creating a skill using the Custom Interaction Model.
+  ![](./media/images/Alexa_ggnLab_SkillModel.png) 
+  
+   6.3 **Skill Invocation Name**
+   This is the name that your users will need to say to start your skill. Refer tips below for details
+  ![](./media/images/Alexa_ggnLab_SkillInvocation.png) 
+  
+  Jump to step 7. Below details are for reference.
+  
+  
   ![](./media/images/Alexa_Lab_4.gif) 
   <details>
  <summary><strong>Skill Information Tips (expand for details)</strong></summary>
@@ -74,11 +91,11 @@ iv. **Invocation Name** This is the name that your users will need to say to st
 </tr></tbody></table>
  </details> 
  
-  7.  Click the **Save button** to move to the **Interaction Model**. 
-  8. Click on the **Launch Skill Builder (Beta)** button . This will launch the new Skill Builder Dashboard. ![](./media/images/Alexa_Lab_5.png)   
+  7. Click the **Save button** to move to the **Interaction Model**. 
+  8. (Skip this step, If you are already on new console.)Click on the **Launch Skill Builder (Beta)** button . This will launch the new Skill Builder Dashboard. ![](./media/images/Alexa_Lab_5.png)   
   9.  Click on the **"Dashboard"** button.  
-  10.  Click **"Add Intent"** on the Dashboard screen.  An intent allows you to define 'what to do' when your custom skill is invoked.  
-  ![](./media/images/Alexa_Lab_5_5.png) 
+  10. Click **"Add Intent"** on the Dashboard screen.  An intent allows you to define 'what to do' when your custom skill is invoked.  
+  ![](./media/images/Alexa_ggnLab_AddIntent.png) 
   11.  Type in a name for the intent under **Create a new custom intent** 
   ![](./media/images/Alexa_Lab_5_6.png) 
   12.  Next we're going **Add utterances** to our intent.  This triggers an invoke of your intent through your user's voice.  You'll want to add a few different variations based upon how users will interact with the different types of metrics available to query.     
