@@ -164,16 +164,16 @@ In Step 1 "Setting up Your Voice User Interface", we created a voice user interf
 <summary><strong>Full solution - Connecting VUI to Lambda (expand for details)</strong></summary> 
   
 1.  Go back to the **[Amazon Developer Portal](https://developer.amazon.com/edw/home.html#/skills/list)** and select your skill from the list. You may still have a browser tab open if you started at the beginning of this tutorial.
-2. Open the "Configuration" tab on the left side. 
+2. Open the "Endpoints" tab on the left side. 
 
-![](./media/images/Alexa_Lab_12.png) 
+![](./media/images/Alexa_Lab_Endpoints.png) 
  
 3. Select the **"AWS Lambda ARN"** option for your endpoint. You have the ability to host your code anywhere that you would like, but for the purposes of simplicity and frugality, we are using AWS Lambda. 
 - Notes: [Read more about Hosting Your Own Custom Skill Web Service](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-web-service). With the AWS Free Tier, you get 1,000,000 free requests per month, up to 3.2 million seconds of compute time per month. Learn more at [https://aws.amazon.com/free/](https://aws.amazon.com/free/). In addition, Amazon now offers [AWS Promotional Credits for developers who have live Alexa skills that incur costs on AWS related to those skills](https://developer.amazon.com/alexa-skills-kit/alexa-aws-credits)
-  ![](./media/images/Alexa_Lab_13.png) 
+  ![](./media/images/Alexa_Lab_LambdaARN.png) 
 4.  Paste your **Lambda's ARN** (Amazon Resource Name) into the textbox provided labeled "Default". It should look similar to the screenshot above.
 5.  Leave **"Account Linking" set to "No"**. For this skill, we won't be using Account Linking, but you can learn more about [Linking an Alexa User with a User in Your System](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system) 
-6.  Click the **"Next"** button to continue to Step #4 of this guide.
+6.  Click the **"Save Endpoint"** button to continue.
 </details>
  
  
