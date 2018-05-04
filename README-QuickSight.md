@@ -34,7 +34,7 @@ You can use a variety of methods to download one of the files in the dataset. If
 
 List one of the files with (Note use **s3://aws-vpa-tweets-euw1...** for EU-WEST-1 [Ireland]):
 ```bash
-aws ls cp s3://aws-vpa-tweets/tweets/2018/04/30/10/aws-vpa-tweets-3-2018-04-30-10-25-03-57315e18-b247-41ca-9a61-19fd5b0ea3fb.gz
+aws s3 ls s3://aws-vpa-tweets/tweets/2018/04/30/10/aws-vpa-tweets-3-2018-04-30-10-25-03-57315e18-b247-41ca-9a61-19fd5b0ea3fb.gz
 ```
 Download this file to your local directory (Note use **s3://aws-vpa-tweets-euw1...** for EU-WEST-1 [Ireland]):
 ```bash
