@@ -107,7 +107,7 @@ iv. **Invocation Name** This is the name that your users will need to say to st
     - Note: Alternatively, you can create a new slot on the right side of the screen in the section titled *Intent Slots*
   14. Our slot is now created and will be added to the *Intent Slots* area on the right side of the screen.  In this section, under the slot, click the area *choose a slot type*. We’ll create a new slot type for our list of metrics.  Let's call this **available_metrics** and click the **+** button to add it. 
 ![](./media/images/Alexa_Lab_6_5.png) 
-  15.  On the bottom left side of the screen, click on the **available_metrics** slot type that was just created.   For the **slot value, enter the *value*** of the metric used from the *Athena_Poller* Lambda function's environment variable: *metric* (e.g. *reinvent twitter sentiment*. Then click the **+** button.  Note: The DynamoDB item that is used as our key in the backend lambda function uses this value to query our metric's value.
+  15.  On the bottom left side of the screen, click on the **available_metrics** slot type that was just created.   For the **slot value, enter the *value*** of the metric used from the *Athena_Poller* Lambda function's environment variable: *metric* (e.g. *tweet count*. Then click the **+** button.  Note: The DynamoDB item that is used as our key in the backend lambda function uses this value to query our metric's value.
     - Note: Don't worry about adding **ID (Optional)** or **Synonyms**.  They can be added later after you test. 
 ![](./media/images/Alexa_Lab_6_6.gif) 
   16. Now you're ready to Click **"Build Model"** and **"Save"** 
@@ -187,7 +187,7 @@ You've now created a Voice User Interface and a Lambda function, and connecte
 
 ![](./media/images/Alexa_Lab_02.png) 
  
-3. Test your skill with the **Service Simulator**. To validate that your skill is working as expected, use the Service Simulator. In the **Enter Utterance** text box, type "What’s my reinvent twitter sentiment" 
+3. Test your skill with the **Service Simulator**. To validate that your skill is working as expected, use the Service Simulator. In the **Enter Utterance** text box, type "What’s my tweet count" 
   ![](./media/images/Alexa_Lab_16.gif) 
 4. Under the Service Response, you should see your metric's response under: *Response > Output Speech > Text*.  If you see errors, check out the **Troubleshooting** tips below.     
 5.  Other testing methods to consider: 
@@ -205,7 +205,7 @@ You've now created a Voice User Interface and a Lambda function, and connecte
  - After you click the **"Ask [Your Skill Name]"** button, you should see the **Lambda Request and Lambda Response boxes** get populated with JSON data like in the screenshot above. 
  - Click the **Listen** button in the bottom right corner to hear Alexa read the response. 
  - You can have an entire conversation with your skill with the Service Simulator. Try the following commands: 
- - "what is my reinvent twitter sentiment" 
+ - "what is my tweet count" 
  (Continue this process for all of the utterances. To start over, click the "Reset" button.) 
 </details>  
  
