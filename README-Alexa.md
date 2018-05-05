@@ -45,10 +45,7 @@ Alexa fits into your Voice Powered Analytics architecture as the interaction int
    This is the name that your users will need to say to start your skill. Refer tips below for details
   ![](./media/images/Alexa_ggnLab_SkillInvocation.png) 
   
-  Jump to step 7. Below details are for reference.
-  
-  
-  ![](./media/images/Alexa_Lab_4.gif) 
+  Jump to step 7. 
   <details>
  <summary><strong>Skill Information Tips (expand for details)</strong></summary>
 
