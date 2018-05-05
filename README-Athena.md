@@ -193,7 +193,7 @@ If you forgot the name of your bucket you can locate the name on the output tab 
 ```
 vpa_athena_database = tweets
 vpa_ddb_table = VPA_Metrics_Table
-vpa_metric_name = Reinvent Twitter Sentiment
+vpa_metric_name = TWEET COUNT
 vpa_athena_query = SELECT count(*) FROM default."tweets"
 region = eu-west-1 (if running out of Ireland) or us-east-1 (if running out of Northern Virginia)
 vpa_s3_output_location = s3://<your_s3_bucket_name>/poller/
