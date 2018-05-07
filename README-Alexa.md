@@ -90,7 +90,7 @@ iv. **Invocation Name** This is the name that your users will need to say to st
  
   7. Click the **Save button** to move to the **Interaction Model**. 
   8. (Skip this step, If you are already on new console.)Click on the **Launch Skill Builder (Beta)** button . This will launch the new Skill Builder Dashboard. ![](./media/images/Alexa_Lab_5.png)   
-  9.  Click on the **"Dashboard"** button.  
+  9.  Click on the **"Intents"** 
   10. Click **"Add Intent"** on the Dashboard screen.  An intent allows you to define 'what to do' when your custom skill is invoked.  
   ![](./media/images/Alexa_ggnLab_AddIntent.png) 
   11.  Type in a name for the intent under **Create a new custom intent** 
