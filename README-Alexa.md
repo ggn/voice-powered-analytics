@@ -102,15 +102,23 @@ iv. **Invocation Name** This is the name that your users will need to say to st
   13. Now we'll **configure our Slots**.  Slots allow you to parameterize different variable attributes when invoking your intent.  For this workshop, the slot will be our metric(s) that we've created with the Athena query.  This is why we've put the {metric} slot name in our utterances. 
     - Type in the name of the slot under **Create a new intent slot** and then **Click the 'ADD' button** to add it.  Then click the **plus(+)** button on the utterances dialog to add the utterance. Save the Model. Give your slot the name {**metric**}.  Note: If you want to give it a different name, then log the name in a separate text editor so we can adjust our backend Lambda function later.  If you do this, also remember to change the name of the slot referenced in your utterance so they match.        
     - Note: Alternatively, you can create a new slot on the right side of the screen in the section titled *Intent Slots*
-  14. Our slot is now created and will be added to the *Intent Slots* area on the right side of the screen.  In this section, under the slot, click the area *choose a slot type*. We’ll create a new slot type for our list of metrics.  Let's call this **available_metrics** and click the **+** button to add it. 
-![](./media/images/Alexa_Lab_6_5.png) 
-  15.  On the bottom left side of the screen, click on the **available_metrics** slot type that was just created.   For the **slot value, enter the *value*** of the metric used from the *Athena_Poller* Lambda function's environment variable: *metric* (e.g. *tweet count*. Then click the **+** button.  Note: The DynamoDB item that is used as our key in the backend lambda function uses this value to query our metric's value.
+  14. Our slot is now created and will be added to the *Intent Slots* area on the right side of the screen.  
+  Now create a new slot type for our list of metrics. Click on **+** button to the right of slot type in Menu. Let's call this **available_metrics** and click the **Create Custom Slot Type** button. 
+  
+![](./media/images/Alexa_ggnlab_AddSlotType.png) 
+![](./media/images/Alexa_ggnlab_SlotType.png)
+  15.  For the **slot value, enter the *value*** of the metric used from the *Athena_Poller* Lambda function's environment variable: *metric* (e.g. **TWEET COUNT**). Then click the **+** button.  (Note: The DynamoDB item that is used as our key in the backend lambda function uses this value to query our metric's value.)
+  ![](./media/images/Alexa_ggnlab_SlotTypeValue.png)
     - Note: Don't worry about adding **ID (Optional)** or **Synonyms**.  They can be added later after you test. 
 ![](./media/images/Alexa_Lab_6_6.gif) 
+
+
   16. Now you're ready to Click **"Build Model"** and **"Save"** 
-![](./media/images/Alexa_Lab_7.png) 
+![](./media/images/Alexa_ggnlab_SavenBuild.png) 
+
+
   17. If your interaction model builds successfully (You'll see a successful build message added to the dialog), click on **Configuration button** to move on to Configuration. In our next step of this guide (Configure Alexa Backend), we will be linking a Lambda function in the AWS developer console.  
-![](./media/images/Alexa_Lab_8.png) 
+ 
  **Troubleshooting** If you get an error from your interaction model, check through this list:
    - Did you copy & paste the provided code into the appropriate boxes?
    - Did you accidentally add any characters to the Interaction Model or Sample Utterances?
