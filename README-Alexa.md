@@ -117,7 +117,7 @@ iv. **Invocation Name** This is the name that your users will need to say to st
 ![](./media/images/Alexa_Lab_6_6.gif) 
 
 
-  16. Now you're ready to Click **"Build Model"** and **"Save"** 
+  16. Now you're ready to Click **"Save"** and **"Build Model"** 
 ![](./media/images/Alexa_ggnlab_SavenBuild.png) 
 
 
@@ -193,7 +193,7 @@ You've now created a Voice User Interface and a Lambda function, and connecte
 
 ![](./media/images/Alexa_Lab_02.png) 
  
-3. Test your skill with the **Service Simulator**. To validate that your skill is working as expected, use the Service Simulator. In the **Enter Utterance** text box, type "What’s my tweet count" 
+3. Test your skill with the **Service Simulator**. To validate that your skill is working as expected, use the Service Simulator. In the **Enter Utterance** text box, type " ask <INVOCTION_NAME> What’s my tweet count" 
   ![](./media/images/Alexa_Lab_16.gif) 
 4. Under the Service Response, you should see your metric's response under: *Response > Output Speech > Text*.  If you see errors, check out the **Troubleshooting** tips below.     
 5.  Other testing methods to consider: 
