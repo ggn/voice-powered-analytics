@@ -93,20 +93,24 @@ iv. **Invocation Name** This is the name that your users will need to say to st
   9.  Click on the **"Intents"** 
   10. Click **"Add Intent"** on the Dashboard screen.  An intent allows you to define 'what to do' when your custom skill is invoked.  
   ![](./media/images/Alexa_ggnLab_AddIntent.png) 
-  11.  Type in a name for the intent under **Create a new custom intent** 
+  11.  Type in a name for the intent under **Create a new custom intent**  (The intent name should be same as that provided in the environment variable on Lambda)
+  
   ![](./media/images/Alexa_Lab_5_6.png) 
   12.  Next we're going **Add utterances** to our intent.  This triggers an invoke of your intent through your user's voice.  You'll want to add a few different variations based upon how users will interact with the different types of metrics available to query.     
   - Some sample utterances for your newly generated intents. These are the things a user would say to make a specific intent happen. Here are a few examples:
     - *What's my {metric}* or *What is the value for {metric}* (More on what the *{metric}* means on the next step) 
     ![](./media/images/Alexa_Lab_6.gif) 
-  13. Now we'll **configure our Slots**.  Slots allow you to parameterize different variable attributes when invoking your intent.  For this workshop, the slot will be our metric(s) that we've created with the Athena query.  This is why we've put the {metric} slot name in our utterances. 
-    - Type in the name of the slot under **Create a new intent slot** and then **Click the 'ADD' button** to add it.  Then click the **plus(+)** button on the utterances dialog to add the utterance. Save the Model. Give your slot the name {**metric**}.  Note: If you want to give it a different name, then log the name in a separate text editor so we can adjust our backend Lambda function later.  If you do this, also remember to change the name of the slot referenced in your utterance so they match.        
+  13. Slots allow you to parameterize different variable attributes when invoking your intent.  For this workshop, the slot will be our metric(s) that we've created with the Athena query.  This is why we've put the {metric} slot name in our utterances. 
     - Note: Alternatively, you can create a new slot on the right side of the screen in the section titled *Intent Slots*
+    
   14. Our slot is now created and will be added to the *Intent Slots* area on the right side of the screen.  
   Now create a new slot type for our list of metrics. Click on **+** button to the right of slot type in Menu. Let's call this **available_metrics** and click the **Create Custom Slot Type** button. 
   
 ![](./media/images/Alexa_ggnlab_AddSlotType.png) 
 ![](./media/images/Alexa_ggnlab_SlotType.png)
+
+   - Once slot type is created, you have to attach it to the slot. Go to Slots and select **available_metrics** in slot ype dropdown.
+
   15.  For the **slot value, enter the *value*** of the metric used from the *Athena_Poller* Lambda function's environment variable: *metric* (e.g. **TWEET COUNT**). Then click the **+** button.  (Note: The DynamoDB item that is used as our key in the backend lambda function uses this value to query our metric's value.)
   ![](./media/images/Alexa_ggnlab_SlotTypeValue.png)
     - Note: Don't worry about adding **ID (Optional)** or **Synonyms**.  They can be added later after you test. 
@@ -117,11 +121,8 @@ iv. **Invocation Name** This is the name that your users will need to say to st
 ![](./media/images/Alexa_ggnlab_SavenBuild.png) 
 
 
-  17. If your interaction model builds successfully (You'll see a successful build message added to the dialog), click on **Configuration button** to move on to Configuration. In our next step of this guide (Configure Alexa Backend), we will be linking a Lambda function in the AWS developer console.  
+  17. If your interaction model builds successfully (You'll see a successful build message added to the dialog).  
  
- **Troubleshooting** If you get an error from your interaction model, check through this list:
-   - Did you copy & paste the provided code into the appropriate boxes?
-   - Did you accidentally add any characters to the Interaction Model or Sample Utterances?
 </details>
 
 ### Step 2: Configure Alexa Backend
