@@ -183,11 +183,6 @@ def upsert_into_DDB(nm, value, context):
 
 ### Environment variables
 
-You will need the S3 bucket name you selected from the CloudFormation template. 
-If you forgot the name of your bucket you can locate the name on the output tab of the CloudFormation stack.
-
-![S3 Bucket Name on CloudFormation Outputs Tab](https://github.com/awslabs/voice-powered-analytics/blob/master/media/images/vpa-s3-buckename.png)
-
 1. Set the following Environment variables:
 
 ```
@@ -196,7 +191,7 @@ vpa_ddb_table = VPA_Metrics_Table
 vpa_metric_name = TWEET COUNT
 vpa_athena_query = SELECT count(*) FROM default."tweets"
 region = eu-west-1 (if running out of Ireland) or us-east-1 (if running out of Northern Virginia)
-vpa_s3_output_location = s3://<your_s3_bucket_name>/poller/
+vpa_s3_output_location = s3://<YOUR_S3_BUCKET_NAME>/poller/
 ```
 
 <details>
@@ -206,6 +201,13 @@ vpa_s3_output_location = s3://<your_s3_bucket_name>/poller/
 
 
 </details>
+
+
+You will need the S3 bucket name you selected from the CloudFormation template. 
+If you forgot the name of your bucket you can locate the name on the output tab of the CloudFormation stack.
+
+![S3 Bucket Name on CloudFormation Outputs Tab](https://github.com/awslabs/voice-powered-analytics/blob/master/media/images/vpa-s3-buckename.png)
+
 
 ### Basic Settings
 
@@ -220,6 +222,8 @@ Scroll up to the top of the screen, select the pane **Triggers**.
 1. Under the **Add trigger**, click the empty box icon, followed by **CloudWatch Events**
 1. Scroll down, and under *Rule*, select **VPAEvery5Min**
 1. Leave the box checked for **Enable trigger**
+1. Click on **Add** to attach this trigger to lambda. Dont forget to **Save** lambda after this step.
+
 
 <details>
 <summary><strong>Watch how to update the trigger</strong></summary><p>
@@ -253,7 +257,7 @@ In this case, we will use the standard CloudWatch Event.
 
 ### Now we should test the Lambda. 
 
-1. Click **test** in the upper right
+1. Click **test** in the upper right. (Please ensure that **"Timeout"** in **Basic Settings** of Lambda is set to 2 mins )
 1. Once the run has completed, click on the **Details** link to see how many reinvent tweets are stored in s3.
 
 Note, there should be > 10,000 tweets. If you get a number lower than this please ask a lab assistant for help.
