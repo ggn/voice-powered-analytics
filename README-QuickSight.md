@@ -139,8 +139,8 @@ f. Click the Tab *S3 Buckets you can access across AWS*, under *Use Different Bu
 1. When asked for the dataset name you can choose anything you like, for our example we use **tweets-dataset** You can choose to validate that SSL will be used for data between Athena and QuickSight. Finish be selecting **Create data source**
 1. Now we need to choose the Athena table we created in **Step 1**. For our example we used the **Default** database, with a table name of **tweets**. Finish by clicking on **Select**. 
 1. SPICE is not needed for this workshop. If asked, select **Directly query your data**. Click Visualize when done. 
-1. QuickSight will now import the data. Wait until you see **Import Complete**. Then close the summary window. 
-1. Add the **created** field from the Athena table by dragging it from the Field list to the empty AutoGraph window.
+1. You will be redirected to Quicksight Visualize window. 
+1. Add the **created** field from the Athena table by dragging it from the Field list to the empty AutoGraph window. (Drop it on **+** sign, towards bottom of the screen)
 1. From the *Visual types* in the bottom left corner, select **Vertical bar chart**
 1. Add another Visual by selecting in the top left corner, the **+ Add** button  and then **Add visual**
 1. On this new graph, lets add the **country** field. 
